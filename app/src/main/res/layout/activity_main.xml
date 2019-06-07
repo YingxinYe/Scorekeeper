@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/teamName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            style="@style/TeamText"
+            android:text="@string/team_1" />
+
+        <ImageButton
+            style="@style/MinusButtons"
+            android:id="@+id/imageButtonLeft"
+            android:layout_width="@dimen/buttonSize"
+            android:layout_height="@dimen/buttonSize"
+            android:src="@drawable/ic_minus"
+            android:contentDescription="@string/minus"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:onClick="Clickhandler"
+            android:background="@drawable/button_background"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textViewUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            style="@style/ScoreText"
+            android:text="@string/NumberUp" />
+
+        <ImageButton
+            style="@style/PlusButtons"
+            android:id="@+id/imageButtonRight"
+            android:layout_width="@dimen/buttonSize"
+            android:layout_height="@dimen/buttonSize"
+            android:src="@drawable/ic_plus"
+            android:contentDescription="@string/plus_button"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:onClick="Clickhandler"
+            android:background="@drawable/button_background"
+            tools:srcCompat="@tools:sample/avatars" />
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/teamName2"
+            android:text="@string/team_2"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/TeamText"
+             />
+
+        <ImageButton
+            style="@style/MinusButtons"
+            android:id="@+id/imageButtonLeft2"
+            android:layout_width="@dimen/buttonSize"
+            android:layout_height="@dimen/buttonSize"
+            android:src="@drawable/ic_minus"
+            android:contentDescription="@string/minus"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:onClick="Clickhandler"
+            android:background="@drawable/button_background"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textViewUp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            style="@style/ScoreText"
+            android:text="@string/NumberDown" />
+
+        <ImageButton
+            style="@style/PlusButtons"
+            android:id="@+id/imageButtonRight2"
+            android:layout_width="@dimen/buttonSize"
+            android:layout_height="@dimen/buttonSize"
+            android:src="@drawable/ic_plus"
+            android:contentDescription="@string/plus_button"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:onClick="Clickhandler"
+            android:background="@drawable/button_background"
+            tools:srcCompat="@tools:sample/avatars" />
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
